@@ -40,10 +40,10 @@ if train_new_model:
     print(val_acc)
 
     # Saving the model
-    model.save('handwritten_digits.model')
+    model.save('handwritten_digits.keras')
 else:
     # Load the model
-    model = tf.keras.models.load_model('handwritten_digits.model')
+    model = tf.keras.models.load_model('handwritten_digits.keras')
 
 # Load custom images and predict them
 image_number = 1
